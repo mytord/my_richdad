@@ -17,8 +17,17 @@ Solution
 
 Time required: `20 hours`
 
+Used libraries: 
+
 1) `FOSUserBundle` for user registration and authorization features.
+
 2) `Twitter bootstrap` for base layouts and forms
+
+3) `highcharts.js` for interactive chart
+
+4) `Acme\YahooBundle` for interaction with Yahoo Finance API
+
+5) `Acme\UserBundle` for customize registration and authorization process and user portfolio crud operations.
 
 
 Installation
