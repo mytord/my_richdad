@@ -4,8 +4,11 @@ Task
 Create simple web application that:
 
 1) Provides user registration and authorization
+
 2) User should have a portfolio of stocks
+
 3) Data source: Yahoo Finance API
+
 4) Show chart of stock history prices for the last 2 years.
 
 Keywords: Symfony2, MySQL, Highcharts, Twitter bootstrap, Yahoo Finance API
