@@ -51,7 +51,7 @@ Install database and fixture data (base stocks)
 
 Run unit tests
 
-`phpunit -c app`
+`bin/phpunit -c app`
 
 Run server
 
