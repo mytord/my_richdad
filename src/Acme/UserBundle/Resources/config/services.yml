@@ -1,0 +1,13 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+
+services:
+    acme.user.profile.type:
+        class: Acme\UserBundle\Form\ProfileType
+        tags:
+            - { name: form.type, alias: acme_user_profile }
+
+    acme.user.service.trendline_builder:
+        class: Acme\UserBundle\Service\TrendlineBuilder
+        arguments: ["@acme.yahoo.dataprovider.finance.historicaldata"]

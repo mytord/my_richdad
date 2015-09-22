@@ -1,0 +1,38 @@
+{% extends '::bootstrap.html.twig' %}
+
+{% block navbar %}
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('homepage') }}">My Richdad</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+            </ul>
+            <p class="navbar-text navbar-right">
+                Signed in as <strong>{{ app.user.username }}</strong>
+            </p>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block body %}
+    {{ block('fos_user_content') }}
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body { padding-top: 70px; }
+        .loading {
+            background: url('{{ asset('ajax-loader.gif') }}') no-repeat;
+            height:30px;
+            padding-left: 30px;
+        }
+    </style>
+{% endblock %}
