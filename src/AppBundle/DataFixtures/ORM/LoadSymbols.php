@@ -8,7 +8,7 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-use Acme\UserBundle\Entity\Symbol;
+use AppBundle\Entity\Symbol;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 

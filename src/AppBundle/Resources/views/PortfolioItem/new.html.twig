@@ -1,0 +1,17 @@
+{% extends '::layout.html.twig' %}
+
+{% block body -%}
+    <div class="container">
+        <h2>Add symbol to my portfolio</h2>
+
+        <div class="col-sm-6">
+            {{ form(form) }}
+
+            <p>
+                <a href="{{ path('portfolio') }}" class="btn btn-sm">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Back to portfolio
+                </a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

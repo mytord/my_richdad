@@ -28,9 +28,7 @@ Used libraries:
 
 3) `highcharts.js` for interactive chart
 
-4) `Acme\YahooBundle` for interaction with Yahoo Finance API
-
-5) `Acme\UserBundle` for customize registration and authorization process and user portfolio crud operations.
+4) `AppBundle` for interaction with Yahoo Finance API and customizing registration and authorization processes. Also it provides crud operations in user portfolio.
 
 
 Installation

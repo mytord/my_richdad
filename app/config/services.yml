@@ -4,8 +4,18 @@ parameters:
 #    parameter_name: value
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    acme.user.service.trendline_builder:
+        class: AppBundle\Service\TrendlineBuilder
+        arguments: ["@acme.yahoo.dataprovider.finance.historicaldata"]
 
 
+    acme.yahoo.query.adapter:
+        class: AppBundle\Query\Adapter\Adapter
+
+    acme.yahoo.query.builder:
+        class: AppBundle\Query\Builder\Builder
+        arguments: ["@acme.yahoo.query.adapter"]
+
+    acme.yahoo.dataprovider.finance.historicaldata:
+        class: AppBundle\DataProvider\Finance\History
+        arguments: ["@acme.yahoo.query.builder"]
